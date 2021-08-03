@@ -1,0 +1,86 @@
+>>> a=10
+>>> type(a)
+<class 'int'>
+>>> b=20.2
+>>> type(b)
+<class 'float'>
+>>> c=1+2j
+>>> type(c)
+<class 'complex'>
+
+>>> a=1+2j
+>>> b=2+3j
+>>> a+b
+(3+5j)
+
+>>> x=True
+>>> type(x)
+<class 'bool'>
+
+>>> s1="sss"
+>>> type(s1)
+<class 'str'>
+
+>>> s1[0]
+'s'
+>>> s1[-1]
+'s'
+>>> s1[3]
+Traceback (most recent call last):
+  File "<pyshell#16>", line 1, in <module>
+    s1[3]
+IndexError: string index out of range
+
+>>> int("10")
+10
+>>> int("10.5")
+Traceback (most recent call last):
+  File "<pyshell#18>", line 1, in <module>
+    int("10.5")
+ValueError: invalid literal for int() with base 10: '10.5'
+>>> int(False)
+0
+
+>>> float(10)
+10.0
+>>> float("10.5")
+10.5
+>>> float("ten")
+Traceback (most recent call last):
+  File "<pyshell#22>", line 1, in <module>
+    float("ten")
+ValueError: could not convert string to float: 'ten'
+
+>>> complex(10)
+(10+0j)
+>>> complex(False)
+0j
+>>> complex("ten")
+Traceback (most recent call last):
+  File "<pyshell#25>", line 1, in <module>
+    complex("ten")
+ValueError: complex() arg is a malformed string
+
+>>> bool(0)
+False
+>>> bool(1)
+True
+>>> bool(10.5)
+True
+>>> bool(0.0)
+False
+>>> bool(0+1j)
+True
+>>> bool("")
+False
+
+>>> str(10)
+'10'
+>>> str(True)
+'True'
+
+
+
+
+
+

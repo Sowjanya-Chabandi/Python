@@ -1,0 +1,74 @@
+>>> s="Hello World"
+>>> type(s)
+<class 'str'>
+>>> len(s)
+11
+>>> s[2]
+'l'
+>>> s[0:5]
+'Hello'
+>>> s[5:11]
+' World'
+>>> s[-1]
+'d'
+>>> s[::-1]
+'dlroW olleH'
+>>> for i in s:
+	print(i)
+
+	
+H
+e
+l
+l
+o
+ 
+W
+o
+r
+l
+d
+
+>>> s.isupper()
+False
+>>> s.islower()
+False
+
+>>> s.index('l')
+2
+>>> s.index('a')
+Traceback (most recent call last):
+  File "<pyshell#27>", line 1, in <module>
+    s.index('a')
+ValueError: substring not found
+>>> s.find('l')
+2
+>>> s.find('a')
+-1
+
+>>> s.startswith('w')
+False
+>>> s.startswith('h')
+False
+>>> s.startswith('H')
+True
+>>> s.endswith('d')
+True
+>>> s.endswith('h')
+False
+
+>>> s.lower()
+'hello world'
+>>> s.upper()
+'HELLO WORLD'
+
+>>> del s
+>>> s
+Traceback (most recent call last):
+  File "<pyshell#29>", line 1, in <module>
+    s
+NameError: name 's' is not defined
+
+
+
+

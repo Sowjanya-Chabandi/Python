@@ -1,0 +1,54 @@
+def fun(n):
+    if n%2==0:
+        print("even")
+    else:
+        print("odd")
+n=int(input())
+fun(n)
+ 
+5
+odd
+
+def fun(a,b):
+    if a>b:
+        print("a is greater than b")
+    else:
+        print("b is greater than a")
+
+fun(10,2)
+a is greater than b
+
+def fun(a,b=11):
+    if a>b:
+        print("a is greater than b")
+    else:
+        print("b is greater than a")
+
+fun(9)
+b is greater than a
+
+def fun(a,b=11):
+    if a>b:
+        print("a is greater than b")
+    else:
+        print("b is greater than a")
+
+fun(9,8)
+
+a is greater than b
+
+def fun(*a):
+    s=sum(a)
+    print(s)
+
+fun(9,8)
+17
+
+fun=lambda x:x*2
+print(fun(5))
+10
+
+
+
+
+

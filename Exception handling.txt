@@ -1,0 +1,32 @@
+try:
+    c=12/0
+except ZeroDivisionError:
+    print("zero division error occured")
+else:
+    print(c)
+finally:
+    print("finally")
+
+zero division error occured
+finally
+
+try:
+    #c=12/0
+    #print(c)
+    name="sss"
+    print(nam)
+except ZeroDivisionError:
+    print("zero division error occured")
+except NameError:
+    print("name error occured")
+except ValueError:
+    print("value error occured")
+else:
+    print(c)
+finally:
+    print("finally")
+
+name error occured
+finally
+
+

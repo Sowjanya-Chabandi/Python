@@ -1,0 +1,71 @@
+>>>A=5
+>>> B=10
+>>> print(A+B)
+15
+
+>>> Name="John"
+>>> print(Name)
+John
+
+>>> a=b=c=10
+>>> print(a)
+10
+>>> print(b)
+10
+>>> print(c)
+10
+
+>>> a,b,c=10,'s',20.2
+>>> print(a)
+10
+>>> print(b)
+s
+>>> print(c)
+20.2
+
+>>> x=15
+>>> x='ssss'
+>>> print(x)
+ssss
+
+>>> x='ss'
+>>> y='ss'
+>>> print(x+y)
+ssss
+
+>>> a=10
+>>> b='xx'
+>>> print(a+b)
+Traceback (most recent call last):
+  File "<pyshell#24>", line 1, in <module>
+    print(a+b)
+TypeError: unsupported operand type(s) for +: 'int' and 'str'
+
+>>> a=10
+>>> b='xx'
+>>> type(a)
+<class 'int'>
+>>> type(b)
+<class 'str'>
+
+>>> print(id(a))
+1734080424528
+>>> print(id(b))
+1734089872368
+
+>>> False=10
+SyntaxError: cannot assign to False
+
+>>> class='ss'
+SyntaxError: invalid syntax
+
+>>> name='john'
+>>> _name='john'
+>>> 1name='john'
+SyntaxError: invalid syntax
+>>> name@='john'
+Traceback (most recent call last):
+  File "<pyshell#36>", line 1, in <module>
+    name@='john'
+TypeError: unsupported operand type(s) for @=: 'str' and 'str'
+

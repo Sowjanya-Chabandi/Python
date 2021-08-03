@@ -1,0 +1,85 @@
+>>> a=10
+>>> b=2
+>>> a+b
+12
+>>> a-b
+8
+>>> a*b
+20
+>>> a/b
+5.0
+>>> a//b
+5
+>>> a%b
+0
+>>> a**b
+100
+>>> 'a'+10
+Traceback (most recent call last):
+  File "<pyshell#9>", line 1, in <module>
+    'a'+10
+TypeError: can only concatenate str (not "int") to str
+>>> 2*'s'
+'ss'
+>>> a>b
+True
+>>> a<b
+False
+>>> a>=b
+True
+>>> a<=b
+False
+>>> a!=b
+True
+>>> a==b
+False
+>>> a and b
+2
+>>> a or b
+10
+>>> a & b
+2
+>>> a | b
+10
+>>> a ^ b
+8
+>>> ~a
+-11
+>>> a>>2
+2
+>>> a<<2
+40
+>>> a+=10
+>>> a
+20
+>>> a-=2
+>>> a
+18
+>>> x=30 if a<b else 40
+>>> x
+40
+
+>>> a is b
+False
+>>> a is not b
+True
+>>> s='abcd'
+>>> 'h' in s
+False
+>>> 'c' in s
+True
+>>> 'c' not in s
+False
+>>> 'f' not in s
+True
+
+>>> c=10
+>>> d=5
+>>> (a+b)*c/d
+40.0
+>>> (a+b)*(c//d)
+40
+>>> (a+(b*c)/d)
+22.0
+
+

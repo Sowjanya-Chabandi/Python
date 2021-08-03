@@ -1,0 +1,53 @@
+>>> t=()
+>>> t
+()
+>>> type(t)
+<class 'tuple'>
+>>> t=('a','b','c','d')
+>>> t
+('a', 'b', 'c', 'd')
+>>> t[2]
+'c'
+>>> t[-1]
+'d'
+>>> len(t)
+4
+>>> t1=('e','f')
+>>> t+t1
+('a', 'b', 'c', 'd', 'e', 'f')
+>>> t.index('d')
+3
+>>> t1=(1,2,3,4)
+>>> sum(t1)
+10
+
+>>> t[5]='g'
+Traceback (most recent call last):
+  File "<pyshell#14>", line 1, in <module>
+    t[5]='g'
+TypeError: 'tuple' object does not support item assignment
+
+>>> set(t)
+{'d', 'a', 'c', 'b'}
+>>> list(t1)
+[1, 2, 3, 4]
+
+>>> del t1
+>>> t1
+Traceback (most recent call last):
+  File "<pyshell#18>", line 1, in <module>
+    t1
+NameError: name 't1' is not defined
+
+>>> t1=(1,2,3)
+>>> t2=('a','b','c')
+>>> z=zip(t1,t2)
+>>> z
+<zip object at 0x000001542B4B35C0>
+>>> tuple(z)
+((1, 'a'), (2, 'b'), (3, 'c'))
+
+
+
+
+

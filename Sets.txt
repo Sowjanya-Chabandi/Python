@@ -1,0 +1,68 @@
+>>> s=set()
+>>> s
+set()
+>>> type(s)
+<class 'set'>
+>>> s=set([1,2,3,4,1,2,'a','b','c','c','a'])
+>>> s
+{1, 2, 3, 4, 'c', 'b', 'a'}
+>>> len(s)
+7
+
+>>> s=set([1,5,8,8,7,6,2,2,3])
+>>> s
+{1, 2, 3, 5, 6, 7, 8}
+>>> max(s)
+8
+>>> min(s)
+1
+>>> s.add(9)
+>>> s
+{1, 2, 3, 5, 6, 7, 8, 9}
+>>> s.add(2)
+>>> s
+{1, 2, 3, 5, 6, 7, 8, 9}
+>>> s.discard(7)
+>>> s
+{1, 2, 3, 5, 6, 8, 9}
+>>> s.remove(9)
+>>> s
+{1, 2, 3, 5, 6, 8}
+
+>>> s1=set(['a','b','c',1,2,3])
+>>> s1
+{1, 2, 3, 'c', 'b', 'a'}
+>>> s.union(s1)
+{1, 2, 3, 'c', 5, 6, 8, 'b', 'a'}
+>>> s.intersection(s1)
+{1, 2, 3}
+>>> s.difference(s1)
+{8, 5, 6}
+>>> s.isdisjoint(s1)
+False
+>>> s.issubset(s1)
+False
+>>> s.issuperset(s1)
+False
+>>> s1.clear()
+>>> s1
+set()
+
+>>> x=(1,2,3,4)
+>>> fs=frozenset(x)
+>>> fs
+frozenset({1, 2, 3, 4})
+>>> fs[1]=5
+Traceback (most recent call last):
+  File "<pyshell#37>", line 1, in <module>
+    fs[1]=5
+TypeError: 'frozenset' object does not support item assignment
+
+
+
+
+
+
+
+
+
